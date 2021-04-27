@@ -36,11 +36,11 @@
     
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-      <a href="homepage.ejs" class="brand-link">
-        <!-- <img src="FFlogo.jpg"
-           alt="Fashion Feet Logo"
-           class="brand-image img-circle elevation-3"> -->
-        <span class="brand-text font-weight-light">Fashion Feet</span>
+      <a href="/" class="brand-link">
+        <img src="logo.png"
+           alt="Electronixs Logo"
+           class="brand-image img-circle elevation-3">
+        <span class="brand-text font-weight-light">Electronixs</span>
       </a>
       <!-- Sidebar -->
       <div class="sidebar">
@@ -56,15 +56,15 @@
             </a>
             </li>
             <li class="nav-item">
-            <a href="delete" class="nav-link">
+            <a href="update" class="nav-link">
               <i class="nav-icon far fa-circle text-info"></i>
-              <p class="text">Delete product</p>
+              <p class="text">Update Product</p>
             </a>
             </li>
             <li class="nav-item">
-            <a href="update" class="nav-link">
+            <a href="delete" class="nav-link">
               <i class="nav-icon far fa-circle text-info"></i>
-              <p class="text">Update Sales</p>
+              <p class="text">Delete Product</p>
             </a>
             </li>
             
@@ -77,25 +77,27 @@
     <div class="content-wrapper">
       
       <section class="content-header">
-        <h1>Fashion Feet Inventory Management</h1>
+        <h1>Electronixs Inventory Management</h1>
       </section>
       
         <form aciton="AddData" method="POST">
           <label>Product ID: </label>
           <input type="number" placeholder="Enter product ID" name="id"><br>
+          <label>Brand: </label>
+          <input type="text" placeholder="Enter Brand" name="brand"><br>
           <label>Product Category: </label>
           <input type="text" placeholder="Enter Product Category" name="category"><br>
-          <label>Type of product: </label>
-          <input type="text" placeholder="Enter Type of product" name="type"><br>
-          <label>Size: </label>
-          <input type="number" placeholder="Enter size" name="size"><br>
+          <label>Product Name: </label>
+          <input type="text" placeholder="Enter Product Name" name="name"><br>
+          <label>Accessories: </label>
+          <input type="text" placeholder="Has Accessories" name="accessories"><br>
           <label>Stock: </label>
           <input type="number" placeholder="Enter Stock" name="stock"><br>
           <label>Cost Price: </label>
           <input type="number" placeholder="Enter Cost Price" name="cost"><br>
           <label>Sell Price: </label>
           <input type="number" placeholder="Enter Selling Price" name="sell"><br>
-          <input type="submit" value="submit" name="submit">
+          <input type="submit" value="submit">
         </form>
     </div>
   </div>

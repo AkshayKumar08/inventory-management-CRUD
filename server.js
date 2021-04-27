@@ -17,12 +17,15 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 app.use(express.static('public'))
 
-app.get('/', (req, res) => {
-	res.render('homepage.ejs')
+app.get('/', async (req, res) => {
+	try{
+		const result = await db.collection('Electronics').find().toArray()
+		res.render('homepage.ejs', {data: result})
+	}catch(err){}
 })
 
 app.get('/add', (req, res) => {
-	res.render('add.ejs')
+	res.render('add.ejs') 
 })
 
 app.get('/update', (req, res) => {
